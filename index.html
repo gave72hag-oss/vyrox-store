@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VYROX — متجر الخدمات الرقمية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="القائمة">☰</button>
+  <div class="brand"><span class="logo">V</span><span>VYROX</span></div>
+  <div class="actions">
+    <button class="icon-btn" id="themeBtn" aria-label="الوضع الليلي">☾</button>
+    <button class="login">تسجيل دخول 👤</button>
+    <button class="cart" id="cartBtn">🛒 <b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">خدمات رقمية سريعة</p>
+      <h1>ارفع وجودك.<br><span>وانمو بسرعة!</span></h1>
+      <p>واجهة متجر حديثة للخدمات الرقمية، مصممة للجوال وسهلة الاستخدام.</p>
+      <a class="cta" href="#services">ابدأ الآن 🚀</a>
+      <div class="rating">★★★★★ <span>+50K عميل</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="rocket">🚀</div>
+      <div class="chart">
+        <small>نمو الحساب</small>
+        <strong>+2,450</strong>
+        <span>↗ 12.5%</span>
+        <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="section-head"><h2>تصفح الأقسام</h2><span>✦</span></div>
+    <div class="categories">
+      <button data-cat="TikTok">TikTok<br><small>متابعين، مشاهدات...</small></button>
+      <button data-cat="Instagram">Instagram<br><small>متابعين، لايكات...</small></button>
+      <button data-cat="YouTube">YouTube<br><small>مشاهدات، مشتركين...</small></button>
+      <button data-cat="Snapchat">Snapchat<br><small>مشاهدات، متابعين...</small></button>
+      <button data-cat="other">خدمات أخرى<br><small>المزيد من الخدمات</small></button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>أفضل الخدمات 🔥</h2></div>
+    <div id="products" class="products"></div>
+    <button class="more" id="allBtn">عرض جميع الخدمات ▦</button>
+  </section>
+
+  <section class="features">
+    <div><b>🔒 آمن</b><span>بياناتك محمية</span></div>
+    <div><b>⚡ تسليم سريع</b><span>خدمات فورية</span></div>
+    <div><b>🛡 ضمان الجودة</b><span>استرداد وفق الشروط</span></div>
+    <div><b>🎧 دعم 24/7</b><span>نحن هنا لمساعدتك</span></div>
+  </section>
+
+  <section class="lower">
+    <div class="panel">
+      <h2>تتبع طلبك 🚚</h2>
+      <p>أدخل رقم الطلب لمعرفة حالته.</p>
+      <div class="track"><input id="orderInput" placeholder="#123456"><button id="trackBtn">تتبع الطلب 🔍</button></div>
+      <div id="trackResult"></div>
+    </div>
+    <div class="panel">
+      <h2>تواصل معنا 💬</h2>
+      <p>نحن هنا للرد على استفساراتك.</p>
+      <div class="socials"><a href="#">Telegram</a><a href="#">WhatsApp</a><a href="#">Discord</a><a href="#">Email</a></div>
+    </div>
+  </section>
+</main>
+
+<div class="cart-drawer" id="drawer">
+  <div class="drawer-head"><h2>السلة</h2><button id="closeCart">×</button></div>
+  <div id="cartItems"></div>
+  <div class="total">الإجمالي: <strong id="total">$0.00</strong></div>
+  <button class="checkout" id="checkout">إتمام الطلب</button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<footer>
+  <div><strong>VYROX</strong><p>متجر خدمات رقمية حديث</p></div>
+  <div><b>معلومات</b><p>من نحن · الأسئلة الشائعة · الشروط</p></div>
+  <div><b>روابط سريعة</b><p>الرئيسية · الخدمات · تتبع الطلب</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
